@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 216, 194);
+}
+h2{
+    text-align: center;
+    padding:4rem;
+}
+.brand{
+    width: 20%;
+    margin:0 2rem;
+}
+header{
+    padding: 2rem;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+section{
+    height:100vh;
+}
+
+.hero{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#get-started{
+    border:none;
+    background-color: orange;
+    color:white;
+    font-size: 2rem;
+    padding:1rem 2rem;
+    margin:2rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#get-started:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 6px black;
+}
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    padding:2rem;
+    width: 25%;
+    margin:2rem 3rem;
+    height: 20rem;
+    border-radius: 4px;
+}
+.card h2{
+    padding:2rem 1rem;
+}
+
+
+
+footer{
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer li{
+    margin: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color:black;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+@media screen and (max-width:428px) {
+    .mini{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu{
+        position: fixed;
+        z-index: 20;
+    }
+    .menu{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -10;
+        background-color: white;
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-evenly;
+        align-items: center;
+        top:0;
+        transition: all 0.3s ease-in-out;
+        left:-100%;
+    }
+    .menu-open{
+        left:0;
+    }
+    section{
+        height: auto;
+    }
+    .hero{
+        font-size: 2rem;
+        font-weight: 200;
+        height: 80vh;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        margin:0;
+    }
+    .card{
+        margin:1rem;
+        padding:1rem;
+        width: 90%;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+}
+
+
+
+
+
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.green{
+    background-color: lightgreen;
+}
+.blue{
+    background-color: lightblue;
+}

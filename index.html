@@ -21,7 +21,7 @@
   <body>
     <header>
       <div class="mini">
-        <div class="brand">LOGO</div>
+        <a href="" class="brand"><img class="logo" src="./logo.jpeg"/></a>
         <div id="menu-button"><i class="fa-solid fa-bars"></i></div>
       </div>
       <nav class="menu menu-close">
@@ -32,6 +32,21 @@
       </nav>
     </header>
     <main>
+      <!-- Contact Pop up -->
+      <div class="popup popup-hide">
+        <div id="popup-close">
+          <i id="close-icon" class="fa-solid fa-xmark fa-xl"></i>
+        </div>
+        <form class="contact-form" method="post" action="">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="" />
+          <label for="email">Email</label>
+          <input id="email" type="email" name="" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="8"></textarea>
+          <input class="submit" type="submit" value="Send" />
+        </form>
+      </div>
       <!-- hero section -->
       <section class="hero">
         <div>
@@ -41,12 +56,28 @@
         <button id="get-started">Get Started</button>
       </section>
       <!-- steps to apply -->
-      <section id="apply" class="red"></section>
-      <section class="blue">
+      <section id="steps-to-apply">
+        <h2>Steps to Apply</h2>
+        <div id="apply">
+          <span class="steps">
+            <div>1</div>
+            <div>Some text</div>
+          </span>
+          <div class="line"></div>        
+          <span class="steps">
+            <div>2</div>
+            <div>Some text</div>
+          </span>
+          <div class="line"></div>
+          <span class="steps"><div>3</div>
+            <div>Some text</div></span>
+        </div>
+      </section>
+      <section class="services">
         <h2>Services</h2>
         <div id="services">
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -56,7 +87,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -66,7 +97,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -76,7 +107,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -86,7 +117,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -97,11 +128,11 @@
           </div>
         </div>
       </section>
-      <section id="about" class="orange">
+      <section class="licenses">
         <h2>Services</h2>
         <div id="services">
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -111,7 +142,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -121,7 +152,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -131,7 +162,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -141,7 +172,7 @@
             </ul>
           </div>
           <div class="card">
-            <h2>Licensing</h2>
+            <h3>Licensing</h3>
             <ul>
               <li>Type A</li>
               <li>Type B</li>
@@ -152,13 +183,75 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="green"></section>
+      <section id="about">
+        <h2>Why Justclick?</h2>
+        <div class="why-container">
+          <div class="why">
+            <div class="about-icon">
+              <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+            </div>
+            <div class="about-description">No hidden charges</div>
+          </div>
+          <div class="why">
+            <div class="about-icon">
+              <i class="fa-solid fa-file-invoice fa-2xl"></i>
+            </div>
+            <div class="about-description">No Service charges</div>
+          </div>
+          <div class="why">
+            <div class="about-icon">
+              <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+            </div>
+            <div class="about-description">Free Inspection</div>
+          </div>
+          <div class="why">
+            <div class="about-icon">
+              <i class="fa-solid fa-address-card fa-2xl"></i>
+            </div>
+            <div class="about-description">Free visiting card</div>
+          </div>
+          <div class="why">
+            <div class="about-icon"><i class="fa-solid fa-check fa-2xl"></i></div>
+            <div class="about-description">Free PRO service</div>
+          </div>
+          <!-- <div>
+            <div class="about-icon"><i class="fa-solid fa-building"></i></div>
+            <div class="about-description">
+              Affordable company setup options starting from AED 5,750
+            </div>
+          </div>
+          <div>
+            <div class="about-icon"></div>
+            <div class="about-description">
+              0% corporate or personal income tax
+            </div>
+          </div>
+          <div>
+            <div class="about-icon"></div>
+            <div class="about-description">
+              Allocation of upti 12 visas on a shared desk facility
+            </div>
+          </div>
+          <div>
+            <div class="about-icon"></div>
+            <div class="about-description">
+              Quick and simple online registration process
+            </div>
+          </div>
+          <div>
+            <div class="about-icon"></div>
+            <div class="about-description">
+              Wide range of business activities
+            </div>
+          </div> -->
+        </div>
+      </section>
     </main>
     <footer>
       <div>
         <h3>Contact</h3>
         <ul>
-          <li>Phone no.:89765567899876</li>
+          <li>Phone no.: 0503464250, 0568608515</li>
           <li>Email: support@justclickcsp.com</li>
           <li>Facebook</li>
           <li>Instagram</li>

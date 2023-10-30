@@ -1,281 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Just-Click</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="mini">
-        <a href="" class="brand"><img class="logo" src="./logo.jpeg"/></a>
-        <div id="menu-button"><i class="fa-solid fa-bars"></i></div>
-      </div>
-      <nav class="menu menu-close">
-        <a class="link" href="">Home</a>
-        <a class="link" href="#services">Our Services</a>
-        <a class="link" href="#about">About Us</a>
-        <a class="link" href="#contact">Contact Us</a>
-      </nav>
-    </header>
-    <main>
-      <!-- Contact Pop up -->
-      <div class="popup popup-hide">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just-Click</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="mini">
+      <a href="" class="brand"><img class="logo" src="./logo.jpeg" /></a>
+      <div id="menu-button"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <nav class="menu menu-close">
+      <a class="link" href="#">Home</a>
+      <a class="link" href="#services">Our Services</a>
+      <a class="link" href="#licenses">Licensing</a>
+      <a class="link" href="#about">About Us</a>
+      <a class="link" href="#contact">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Contact Pop up -->
+    <div class="popup popup-hide">
+      <form class="contact-form" method="post" action="">
         <div id="popup-close">
           <i id="close-icon" class="fa-solid fa-xmark fa-xl"></i>
         </div>
-        <form class="contact-form" method="post" action="">
-          <label for="name">Name</label>
-          <input id="name" type="text" name="" />
-          <label for="email">Email</label>
-          <input id="email" type="email" name="" />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="8"></textarea>
-          <input class="submit" type="submit" value="Send" />
-        </form>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="" />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="8"></textarea>
+        <input class="submit" type="submit" value="Send" />
+      </form>
+    </div>
+    <!-- hero section -->
+    <section class="hero">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="slide-img" src="./image-1.jpg">
+          <pre class="text">
+            Start Your Business in UAE
+            Mainland & Freezone company setup
+            Fast and Easy Processing
+          </pre>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="slide-img" src="./image-2.jpg">
+          <pre class="text">
+            Freezone Licensing
+            Starting from 5750AED
+          </pre>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="slide-img" src="./image-3.jpg">
+          <pre class="text">
+            Get your UAE residency visa
+            with our exciting offer,
+            Contact us for more information.
+          </pre>
+        </div>
+
+        <div class="dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      <a id="get-started" href="#contact">Get Started</a>
+        
       </div>
-      <!-- hero section -->
-      <section class="hero">
+      <div id="fixed-text">
+        Business setup in Dubai<br />3+ years in business <br />Hassel free
+        procedure<br />Trustworthy
+      </div>
+    </section>
+    <!-- steps to apply -->
+    <section id="steps-to-apply">
+      <h2 class="red-heading">Steps to Apply</h2>
+      <div id="apply">
         <div>
-          Business setup in Dubai<br />3+ years in business <br />Hassel free
-          procedure<br />Trustworthy
-        </div>
-        <button id="get-started">Get Started</button>
-      </section>
-      <!-- steps to apply -->
-      <section id="steps-to-apply">
-        <h2>Steps to Apply</h2>
-        <div id="apply">
           <span class="steps">
-            <div>1</div>
-            <div>Some text</div>
+            <div class="step-text">Choose your licence type and business activity</div>
           </span>
-          <div class="line"></div>        
+          <div class="step-count">1</div>
+        </div>
+        <div class="line"></div>
+        <div>
           <span class="steps">
-            <div>2</div>
-            <div>Some text</div>
+            <div class="step-text">submit your paperwork and make payments</div>
           </span>
-          <div class="line"></div>
-          <span class="steps"><div>3</div>
-            <div>Some text</div></span>
+          <div class="step-count">2</div>
         </div>
-      </section>
-      <section class="services">
-        <h2>Services</h2>
-        <div id="services">
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
+        <div class="line"></div>
+        <div class="">
+          <span class="steps">
+            <div class="step-text">Receive your business license</div>
+          </span>
+          <div class="step-count">3</div>
         </div>
-      </section>
-      <section class="licenses">
-        <h2>Services</h2>
-        <div id="services">
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Licensing</h3>
-            <ul>
-              <li>Type A</li>
-              <li>Type B</li>
-              <li>Type C</li>
-              <li>Type D</li>
-              <li>Type E</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <h2>Why Justclick?</h2>
-        <div class="why-container">
-          <div class="why">
-            <div class="about-icon">
-              <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
-            </div>
-            <div class="about-description">No hidden charges</div>
-          </div>
-          <div class="why">
-            <div class="about-icon">
-              <i class="fa-solid fa-file-invoice fa-2xl"></i>
-            </div>
-            <div class="about-description">No Service charges</div>
-          </div>
-          <div class="why">
-            <div class="about-icon">
-              <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
-            </div>
-            <div class="about-description">Free Inspection</div>
-          </div>
-          <div class="why">
-            <div class="about-icon">
-              <i class="fa-solid fa-address-card fa-2xl"></i>
-            </div>
-            <div class="about-description">Free visiting card</div>
-          </div>
-          <div class="why">
-            <div class="about-icon"><i class="fa-solid fa-check fa-2xl"></i></div>
-            <div class="about-description">Free PRO service</div>
-          </div>
-          <!-- <div>
-            <div class="about-icon"><i class="fa-solid fa-building"></i></div>
-            <div class="about-description">
-              Affordable company setup options starting from AED 5,750
-            </div>
-          </div>
-          <div>
-            <div class="about-icon"></div>
-            <div class="about-description">
-              0% corporate or personal income tax
-            </div>
-          </div>
-          <div>
-            <div class="about-icon"></div>
-            <div class="about-description">
-              Allocation of upti 12 visas on a shared desk facility
-            </div>
-          </div>
-          <div>
-            <div class="about-icon"></div>
-            <div class="about-description">
-              Quick and simple online registration process
-            </div>
-          </div>
-          <div>
-            <div class="about-icon"></div>
-            <div class="about-description">
-              Wide range of business activities
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li>Phone no.: 0503464250, 0568608515</li>
-          <li>Email: support@justclickcsp.com</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>X</li>
-        </ul>
       </div>
-      <div>
-        <h3>Address</h3>
-        <p>
-          Here comes some random text as placeholder<br />
-          for real address
-        </p>
+    </section>
+    <section class="services">
+      <h2 class="red-heading">Services</h2>
+      <div id="services">
+        <div class="card">
+          <h3>Visa</h3>
+          <p>click offers a variety of Dubai visa services, including visa documentation and visa support for UAE
+            individuals and businesses. With just one click, you can apply for the following visa types</p>
+          <ul>
+            <li>Business Visa</li>
+            <li>Work (Employment) visa</li>
+            <li>Family Visa</li>
+            <li>Freelance Visa</li>
+            <li>Tourist Visa</li>
+            <li>And many more...</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>License</h3>
+          <p>click offers a variety of Dubai visa services, including visa documentation and visa support for UAE
+            individuals and businesses. With just one click, you can apply for the following visa types</p>
+        </div>
+        <div class="card">
+          <h3>Office Spaces</h3>
+          <p>
+            The UAE is a dream destination for businesses and individuals looking for significant growth. We realize
+            that people are often hesitant to rent offices. Many times, entrepreneurs do not know where the office is
+            located, the type of office they need, the right size for a particular entity, etc. justclick can provide
+            you with office space in the UAE, depending on your needs and your intended business.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Sponsorship</h3>
+          <p>According to the UAE Companies Law, establishing a limited liability company in the mainland with foreign
+            investment requires the participation of a local sponsor. If you are faced with the task of finding a
+            reliable local sponsor in Dubai or UAE, entrust the job to Justclick Business consultants.</p>
+        </div>
       </div>
-      <div>
-        <h3>Useful links</h3>
-        <ul>
-          <li><a href="#">TOP</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Licensing</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
+    </section>
+    <section class="licenses">
+      <h2 class="white-heading">Licenses</h2>
+      <div id="licenses">
+        <div class="license-category">
+          <img class="license-background"
+            src="https://images.pexels.com/photos/3769312/pexels-photo-3769312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <div class="license-text">
+            <div class="license-title">Freezone<br>License</div>
+            <div class="license-details">
+              A free zone is an area or jurisdiction within the United Arab Emirates that is authorised to carry out a
+              specific set of trade activities. A licence is needed to establish a business in the Dubai Freezone, and
+              UAE and Dubai freezone licences are given according to the specific business activity of the company.
+              Freezone License benefits
+              <ul>
+                <li>100% ownership </li>
+                <li>Trade license UAE</li>
+                <li>3 Business Activites </li>
+                <li>Investor Visa </li>
+                <li>Medical and Emirates ID</li>
+                <li>Bank account Assistance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="license-category">
+          <img class="license-background"
+            src="https://images.pexels.com/photos/3214995/pexels-photo-3214995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+          <div class="license-text">
+            <div class="license-title">Mainland<br>License</div>
+            <div class="license-details">
+              Establishing a mainland company in Dubai may be a very profitable investment choice for companies and
+              investors. In Dubai, all business entities that come under commercial, professional, and sole
+              establishment registered under the Dubai Economic Department (DED) are known as Dubai Mainland License.
+              Mainland company formation in Dubai, UAE gives you the freedom to extend your business’ branches to other
+              parts of Dubai and across the UAE.
+              Mainland License benefits
+              <ul>
+                <li>100% Ownership</li>
+                <li>Unlimited Business Activites</li>
+                <li>Unlimited nunber of Visas</li>
+                <li>Operate In the heart of Dubai</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+    </section>
+    <section id="about">
+      <h2>Why Justclick?</h2>
+      <div class="why-container">
+        <div class="why">
+          <div class="about-icon">
+            <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+          </div>
+          <div class="about-description">Quick and simple processing</div>
+        </div>
+        <div class="why">
+          <div class="about-icon">
+            <i class="fa-solid fa-file-invoice fa-2xl"></i>
+          </div>
+          <div class="about-description">Complete confidentiality & privacy assured</div>
+        </div>
+        <div class="why">
+          <div class="about-icon">
+            <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+          </div>
+          <div class="about-description">100% Ownership</div>
+        </div>
+        <div class="why">
+          <div class="about-icon">
+            <i class="fa-solid fa-address-card fa-2xl"></i>
+          </div>
+          <div class="about-description">Assistance to open Bank Account</div>
+        </div>
+        <div class="why">
+          <div class="about-icon"><i class="fa-solid fa-check fa-2xl"></i></div>
+          <div class="about-description">UAE Company setup in less than a week!</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="red-heading">Contact</h2>
+      <h3 class="center">Enter your contact details<br>We will reach out to you shortly</h3>
+      <form method="post" id="contact-form">
+        <div class="name-inputs">
+          <input class="contact-input" name="firstname" type="text" placeholder="First Name">
+          <input class="contact-input" name="lastname" type="text" placeholder="Last Name">
+        </div>
+        <select>
+          <option value="freezone">Freezone</option>
+          <option value="mainland">Mainland</option>
+          <option value="visa">Visa</option>
+        </select>
+        <input class="contact-input" name="email" type="email" placeholder="Email">
+        <input class="contact-input" name="contact" type="text" placeholder="Contact">
+        <input class="contact-input" type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>Phone no.: 0503464250, 0568608515</li>
+        <li>Email: support@justclickcsp.com</li>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>X</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Address</h3>
+      <p>
+        106, Al Hilal bank building, Al Quasis l, Dubai, UAE
+      </p>
+    </div>
+    <div>
+      <h3>Useful links</h3>
+      <ul>
+        <li><a href="#">TOP</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Licensing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>

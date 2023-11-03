@@ -81,9 +81,9 @@ nav {
 
 .slideshow-container {
   max-width: 100vw;
-  height:80vh;
+  height: 80vh;
   position: relative;
-  margin-top:200px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,13 +100,15 @@ nav {
   width: 40rem;
   text-align: start;
 }
-#three-plus{
+
+#three-plus {
   background: #fff;
   border-radius: 10rem;
-  color:#ba1010;
-  padding:8px 12px;
+  color: #ba1010;
+  padding: 8px 12px;
   font-size: 2rem;
 }
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -141,9 +143,9 @@ nav {
 .dots {
   padding: 0.5rem;
   text-align: center;
-  margin:0;
-  padding:0;
-  height:1rem;
+  margin: 0;
+  padding: 0;
+  height: 1rem;
 }
 
 /* Fading animation */
@@ -162,12 +164,12 @@ nav {
   }
 }
 
-#fixed-text{
+#fixed-text {
   position: absolute;
-  right:10rem;
-  top:40%;
+  right: 10rem;
+  top: 40%;
   font-size: 2rem;
-  color:white;
+  color: white;
 }
 
 #get-started {
@@ -189,9 +191,11 @@ nav {
   transform: scale(1.05);
   box-shadow: 1px 1px 1rem black;
 }
-section{
-  padding:4rem auto;
+
+section {
+  padding: 4rem auto;
 }
+
 .services {
   background-color: white;
   text-align: center;
@@ -208,47 +212,53 @@ section{
   width: 70%;
 }
 
-#services .card{
-  max-width:35rem;
+#services .card {
+  max-width: 35rem;
   width: 30rem;
   height: 25rem;
-  margin:2rem;
-  padding:2rem;
+  margin: 2rem;
+  padding: 2rem;
   text-align: center;
   font-size: 18px;
   transition: all 0.3s ease-in-out;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#services .card h3{
+
+#services .card h3 {
   font-size: 32px;
   font-weight: 600;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
-#services .card p{
+
+#services .card p {
   visibility: hidden;
-  color:#ca3d22;
-  transition:  all 1s ease-in-out;
+  color: #ca3d22;
+  transition: all 1s ease-in-out;
 
 }
-#services .card ul{
+
+#services .card ul {
   visibility: hidden;
-  color:#ca3d22;
-  transition:  all 1s ease-in-out;
+  color: #ca3d22;
+  transition: all 1s ease-in-out;
   text-align: start;
 
 }
-#services .card:hover p{
-  color:white;
+
+#services .card:hover p {
+  color: white;
   visibility: visible;
-  transition:  all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 
 }
-#services .card:hover ul{
+
+#services .card:hover ul {
   visibility: visible;
-  color:white;
-  transition:  all 1s ease-in-out;
+  color: white;
+  transition: all 1s ease-in-out;
 
 }
+
 .licenses {
   background-color: #ca3d22;
 }
@@ -266,8 +276,9 @@ section{
   transition: all 0.5s ease-in-out;
   position: relative;
 }
-.license-title{
-  transition:all 0.5s ease-in-out;
+
+.license-title {
+  transition: all 0.5s ease-in-out;
 }
 
 .license-background {
@@ -285,17 +296,18 @@ section{
 
 .license-details {
   position: absolute;
-  color:transparent;
-  margin-top:4rem;
-  top:100%;
+  color: transparent;
+  margin-top: 4rem;
+  top: 100%;
   transition: 0.2s ease-in-out;
-}
-.license-category:hover .license-details{
-  color:white;
 }
 
 .license-category:hover .license-details {
-  color:white;
+  color: white;
+}
+
+.license-category:hover .license-details {
+  color: white;
 }
 
 .license-text {
@@ -356,53 +368,7 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 1rem auto;
-  justify-content: space-evenly;
-}
 
-.contact-form input,
-textarea {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.popup {
-  z-index: 30;
-  position: fixed;
-  background-color: #00000072;
-  padding: 1rem;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  transition: all 0.5s ease-in-out;
-}
-
-.popup form {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 5px;
-  width: 40%;
-  left: 20rem;
-}
-
-.popup-hide {
-  left: -105%;
-  transition: all 0.5s ease-in-out;
-}
-
-#popup-close {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-}
-
-#close-icon {
-  margin: 1rem;
-}
 
 #about {
   background: linear-gradient(180deg, rgb(201, 62, 34), rgb(154, 0, 0));
@@ -411,7 +377,7 @@ textarea {
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 70vh;
 }
@@ -450,8 +416,9 @@ textarea {
   background-color: #fff;
   min-height: 70vh;
 }
-#steps-to-apply h2{
-  margin-top:4rem;
+
+#steps-to-apply h2 {
+  margin-top: 4rem;
 }
 
 #apply {
@@ -466,7 +433,7 @@ textarea {
   height: 10px;
   width: 10rem;
   top: 1rem;
-  margin:0;
+  margin: 0;
   background-color: #ba1010;
 }
 
@@ -478,7 +445,7 @@ textarea {
   width: 300px;
   height: 300px;
   z-index: 10;
-  background: radial-gradient(#ff2020d0,#781703);
+  background: radial-gradient(#ff2020d0, #781703);
   color: white;
   font-weight: 800;
   font-size: 2rem;
@@ -486,7 +453,8 @@ textarea {
   outline: 5px solid #fce3cd;
   aspect-ratio: 1/1;
 }
-.step-count{
+
+.step-count {
   font-size: 3rem;
   padding: 1rem;
   width: 100px;
@@ -494,27 +462,31 @@ textarea {
   border: 2px solid #781703;
   border-radius: 20rem;
 }
+
 .step-text {
   font-size: 24px;
   font-weight: 500;
 }
 
 section#contact {
-  background:  #fff;
-  margin-bottom:10rem;
+  background: #fff;
+  margin-bottom: 10rem;
 }
-#contact-form{
-  background:linear-gradient(45deg, #a20b0b,#c83b21);
+
+#contact-form {
+  background: linear-gradient(45deg, #a20b0b, #c83b21);
   height: 60vh;
 }
+
 #contact form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  width: 60%;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   border-radius: 5px;
   box-shadow: 2px 2px 8px #00000072;
   font-size: 22px;
@@ -548,16 +520,17 @@ option {
   margin: 0.5rem 0;
   width: 99%;
 }
-.center{
+
+.center {
   text-align: center;
-  padding: 3rem;  
+  padding: 3rem;
   font-size: 1.5rem;
   color: #ca3d22;
 }
 
 input[type='submit'] {
   /* background-color: rgb(65, 65, 255); */
-  background: linear-gradient(45deg,#ca3d22,#ff0000);
+  background: linear-gradient(45deg, #ca3d22, #ff0000);
   color: white;
   border: 2px solid white;
   font-size: 2rem;
@@ -574,13 +547,14 @@ input[type='submit']:hover {
   transform: scale(1.02);
 }
 
-.white-heading{
-  color:white;
+.white-heading {
+  color: white;
   padding: 2rem auto;
   margin-top: 4rem;
 }
-.red-heading{
-  color:#ba1010;
+
+.red-heading {
+  color: #ba1010;
   padding: 2rem auto;
   margin-top: 2rem;
 }
@@ -611,25 +585,29 @@ input[type='submit']:hover {
     position: fixed;
     z-index: 50;
     right: 30px;
-    color:red;
+    color: red;
     transform: scale(1.5);
   }
-  #menu-button i{
-    padding:1rem;
+
+  #menu-button i {
+    padding: 1rem;
   }
+
   .slideshow-container {
     max-width: 100vw;
-    height:60vh;
+    height: 60vh;
     position: relative;
     margin-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  #fixed-text{
+
+  #fixed-text {
     font-size: 12px;
     bottom: 60px;
   }
+
   /* Caption text */
   .text {
     color: #f2f2f2;
@@ -638,18 +616,20 @@ input[type='submit']:hover {
     padding: 4px 8px;
     position: absolute;
     top: 4rem;
-    right:2rem;
-    margin:0;
+    right: 4rem;
+    margin: 0;
     width: 90%;
-    text-align: center  ;
+    text-align: center;
   }
-  #three-plus{
+
+  #three-plus {
     background: #fff;
     border-radius: 10rem;
-    color:#ba1010;
-    padding:2px 4px;
+    color: #ba1010;
+    padding: 2px 4px;
     font-size: 1.5rem;
   }
+
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
@@ -658,7 +638,7 @@ input[type='submit']:hover {
     position: absolute;
     top: 0;
   }
-  
+
   /* The dots/bullets/indicators */
   .dot {
     height: 8px;
@@ -669,25 +649,26 @@ input[type='submit']:hover {
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  
+
   .active {
     background-color: #717171;
   }
-  
+
   .slide-img {
     object-fit: cover;
     width: 100vw;
     height: 70vh;
+    margin-top: 0;
     object-position: top;
     filter: brightness(0.6);
   }
-  
+
   .dots {
     padding: 0.5rem;
     text-align: center;
-    margin:0;
-    padding:0;
-    height:1rem;
+    margin: 0;
+    padding: 0;
+    height: 1rem;
   }
 
 
@@ -790,7 +771,9 @@ input[type='submit']:hover {
   .hero {
     font-size: 2rem;
     font-weight: 200;
-    min-height: 70vh;
+    height: 70vh;
+    margin: 0;
+    padding-top: 0;
   }
 
   .services {
@@ -814,59 +797,99 @@ input[type='submit']:hover {
     justify-content: space-evenly;
     align-items: stretch;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
+
   #services .card {
     padding: 1rem;
     height: 30rem;
     margin: 1rem;
     width: 90%;
   }
-  .license-category{
+
+  .license-category {
     width: 95vw;
     height: max-content;
     padding: 0.5rem;
-    margin:0.5rem;
-  }
-  .license-title{
-    font-size: 22px;
-  }
-  .licenses-details{
-    padding: 0.5rem;
-    margin:0.5rem;
-    font-size: 16px;
-    font-weight: 400;
-    color:white;
-  }
-  .license-background{
-    width: 95vw;
-    min-height:800px ;
-  }
-  #services .card p{
-    visibility: visible;
-    color:white;
-    transition:  all 1s ease-in-out;
-  
-  }
-  #services .card ul{
-    visibility: visible;
-    color:white;
-    transition:  all 1s ease-in-out;
-    text-align: start; 
+    margin: 0.5rem;
   }
 
-.license-details {
-  position: absolute;
-  color:white;
-  font-size: 16px;
-  margin-top:4rem;
-  top:100%;
-  width: 100%;
-  transition: 0.2s ease-in-out;
+  .license-title {
+    font-size: 22px;
+  }
+
+  .licenses-details {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+
+  .license-background {
+    width: 95vw;
+    min-height: 800px;
+  }
+
+  #services .card p {
+    visibility: visible;
+    color: white;
+    transition: all 1s ease-in-out;
+
+  }
+
+  #services .card ul {
+    visibility: visible;
+    color: white;
+    transition: all 1s ease-in-out;
+    text-align: start;
+  }
+
+  .license-details {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    margin-top: 4rem;
+    top: 100%;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+  }
+
+  #contact {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #contact form{
+    width: 100%;
+    margin:0;
+    padding: 3 0;
+  }
+  .name-inputs{
+    width: 90%;
+  }
+  .contact-select{
+    width: 90%;
+  }
+  .contact-input{
+    width: 90%;
+  }
+
+.white-heading {
+  color: white;
+  padding: 2rem auto;
+  margin-top: 0rem;
+}
+
+.red-heading {
+  color: #ba1010;
+  padding: 2rem auto;
+  margin-top: 0rem;
 }
 }

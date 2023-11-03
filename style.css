@@ -100,7 +100,13 @@ nav {
   width: 40rem;
   text-align: start;
 }
-
+#three-plus{
+  background: #fff;
+  border-radius: 10rem;
+  color:#ba1010;
+  padding:8px 12px;
+  font-size: 2rem;
+}
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -204,7 +210,7 @@ section{
 
 #services .card{
   max-width:35rem;
-  width: 35rem;
+  width: 30rem;
   height: 25rem;
   margin:2rem;
   padding:2rem;
@@ -256,23 +262,12 @@ section{
 
 .license-category {
   width: 40rem;
-  margin: 1rem 2rem;
+  margin: 2rem;
+  transition: all 0.5s ease-in-out;
   position: relative;
-  color:transparent;
-  transition: all 0.5s ease-in-out;
 }
-.license-details{
-  color:transparent;
+.license-title{
   transition:all 0.5s ease-in-out;
-}
-.license-category:hover .license-details{
-  color:white;
-  transition: all 0.5s ease-in-out;
-}
-
-.licenses .services {
-  display: flex;
-  justify-content: center;
 }
 
 .license-background {
@@ -289,12 +284,17 @@ section{
 }
 
 .license-details {
-  display: none;
+  position: absolute;
+  color:transparent;
+  margin-top:4rem;
+  top:100%;
   transition: 0.2s ease-in-out;
+}
+.license-category:hover .license-details{
+  color:white;
 }
 
 .license-category:hover .license-details {
-  display: block;
   color:white;
 }
 
@@ -601,17 +601,96 @@ input[type='submit']:hover {
   }
 
   .mini {
-    width: 100vw;
     display: flex;
-    justify-content: space-between;
-  }M
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
   #menu-button {
     visibility: visible;
     position: fixed;
-    z-index: 20;
+    z-index: 50;
     right: 30px;
+    color:red;
+    transform: scale(1.5);
   }
+  #menu-button i{
+    padding:1rem;
+  }
+  .slideshow-container {
+    max-width: 100vw;
+    height:60vh;
+    position: relative;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #fixed-text{
+    font-size: 12px;
+    bottom: 60px;
+  }
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 8px;
+    position: absolute;
+    top: 4rem;
+    right:2rem;
+    margin:0;
+    width: 90%;
+    text-align: center  ;
+  }
+  #three-plus{
+    background: #fff;
+    border-radius: 10rem;
+    color:#ba1010;
+    padding:2px 4px;
+    font-size: 1.5rem;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 6px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .slide-img {
+    object-fit: cover;
+    width: 100vw;
+    height: 70vh;
+    object-position: top;
+    filter: brightness(0.6);
+  }
+  
+  .dots {
+    padding: 0.5rem;
+    text-align: center;
+    margin:0;
+    padding:0;
+    height:1rem;
+  }
+
+
 
   .menu {
     width: 100vw;
@@ -762,8 +841,32 @@ input[type='submit']:hover {
     margin:0.5rem;
     font-size: 16px;
     font-weight: 400;
+    color:white;
   }
   .license-background{
-    width: 90vw;
+    width: 95vw;
+    min-height:800px ;
   }
+  #services .card p{
+    visibility: visible;
+    color:white;
+    transition:  all 1s ease-in-out;
+  
+  }
+  #services .card ul{
+    visibility: visible;
+    color:white;
+    transition:  all 1s ease-in-out;
+    text-align: start; 
+  }
+
+.license-details {
+  position: absolute;
+  color:white;
+  font-size: 16px;
+  margin-top:4rem;
+  top:100%;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
 }

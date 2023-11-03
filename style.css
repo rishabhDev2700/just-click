@@ -604,8 +604,9 @@ input[type='submit']:hover {
   }
 
   #fixed-text {
-    font-size: 12px;
+    font-size: 16px;
     bottom: 60px;
+    right:6rem;
   }
 
   /* Caption text */
@@ -616,7 +617,7 @@ input[type='submit']:hover {
     padding: 4px 8px;
     position: absolute;
     top: 4rem;
-    right: 4rem;
+    right: 1rem;
     margin: 0;
     width: 90%;
     text-align: center;

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400&family=Red+Hat+Display:wght@300;400&display=swap');
+
 * {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: regular;
 }
 
 body {
@@ -9,19 +13,24 @@ body {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 48px;
   text-align: center;
-  padding: 4rem;
-  margin-bottom: 2rem;
+  padding: 4rem auto;
+  margin-bottom: 1rem;
+}
+.mini{
+  margin:0;
+  padding:0;
+  height: 100%;
 }
 
 .brand {
-  width: 5rem;
-  margin: 0 1rem;
+  margin-left:1rem;
 }
 
 .logo {
   width: 8rem;
+
 }
 
 header {
@@ -34,7 +43,7 @@ header {
   top: 0;
   z-index: 20;
   box-shadow: 2px 2px 8px #00000072;
-  height: 6rem;
+  height: 5rem;
 }
 
 #menu-button {
@@ -66,7 +75,7 @@ nav {
 
 .hero {
   background-color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   text-align: center;
   font-size: 4rem;
   font-weight: 300;
@@ -98,7 +107,9 @@ nav {
   position: absolute;
   top: 12rem;
   width: 40rem;
+  margin-left:4rem;
   text-align: start;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 #three-plus {
@@ -170,6 +181,7 @@ nav {
   top: 40%;
   font-size: 2rem;
   color: white;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 #get-started {
@@ -193,15 +205,16 @@ nav {
 }
 
 section {
-  padding: 4rem auto;
+  padding: 6rem auto;
 }
 
 .services {
-  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ba1010;
+  color:white;
 }
 
 #services {
@@ -209,58 +222,96 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  min-width: 70%;
+  max-width: 80%;
+  margin: 3rem auto;
 }
 
 #services .card {
+  position: relative;
   max-width: 35rem;
-  width: 30rem;
-  height: 25rem;
-  margin: 2rem;
+  height: 400px;
+  width: 550px;
+  margin: 1rem;
   padding: 2rem;
   text-align: center;
   font-size: 18px;
   transition: all 0.3s ease-in-out;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.service-background{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(0.5);
+  transition: 0.3s ease-out;
+}
+.service-background:hover{
+  filter:brightness(0.4) blur(2px)
+}
+.card p,.card ul{
+  position: absolute;
+  text-align: start;
+  left:2rem;
+  font-family: 'Red Hat Display', sans-serif;
+}
+.card h3{
+  font-family: 'Bebas Neue',sans-serif;
+  position: absolute;
+  top:2;
+  color:white;
+}
+.card p{
+  width: 80%;
+  top:5rem;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.card ul{
+  bottom:3rem;
+}
+.card ul li{
+  font-family: 'Red Hat Display', sans-serif;
+
 }
 
 #services .card h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   padding-bottom: 2rem;
+  color: white;
 }
 
-#services .card p {
+#services .card p,#services .card ul {
   visibility: hidden;
-  color: #ca3d22;
-  transition: all 1s ease-in-out;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
 
 }
 
-#services .card ul {
+ /* {
   visibility: hidden;
   color: #ca3d22;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-align: start;
 
-}
+} */
 
 #services .card:hover p {
   color: white;
   visibility: visible;
-  transition: all 1s ease-in-out;
-
 }
 
 #services .card:hover ul {
   visibility: visible;
   color: white;
-  transition: all 1s ease-in-out;
-
 }
 
 .licenses {
-  background-color: #ca3d22;
+  background-color: white;
 }
 
 #licenses {
@@ -286,11 +337,10 @@ section {
   width: 40rem;
   height: 45rem;
   object-fit: cover;
-  filter: brightness(0.4) blur(1px);
+  filter: brightness(0.8);
 }
-
 .license-title {
-  font-size: 3rem;
+  font-size: 32px;
   font-weight: 500;
 }
 
@@ -305,7 +355,10 @@ section {
 .license-category:hover .license-details {
   color: white;
 }
-
+.license-category:hover .license-background{
+  filter: brightness(0.4) blur(3px);
+  transition: 0.4s ease-in-out;
+}
 .license-category:hover .license-details {
   color: white;
 }
@@ -315,14 +368,14 @@ section {
   width: 70%;
   top: 10%;
   left: 15%;
-  font-size: 1.2rem;
+  font-size: 18px;
   color: white;
 }
 
 
 .card {
-  background-color: #ca3d22;
-  color: white;
+  background-color: white;
+  color: #ca3d22;
   border-radius: 20px;
   box-shadow: 2px 2px 14px black;
 }
@@ -335,12 +388,12 @@ footer {
   box-shadow: 2px 2px 4px #000;
   padding: 2rem 4rem;
   display: flex;
-  background-color: #ba1010;
+  background-color: #ca3d22;
   border-top: 2px solid #ca3d22;
   color: white;
   font-weight: 500;
   justify-content: space-evenly;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 footer ul {
@@ -356,7 +409,7 @@ footer a {
   transition: all 0.3s ease-in-out;
   color: white;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 18px;
   padding: 1rem;
 }
 
@@ -373,18 +426,16 @@ footer a:hover {
 #about {
   background: linear-gradient(180deg, rgb(201, 62, 34), rgb(154, 0, 0));
   color: #ba1010;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 70vh;
+  min-height: 50vh;
+  padding:2rem auto;
 }
 
-#about h2 {
-  color: white;
-}
 
 .why {
   display: flex;
@@ -408,20 +459,17 @@ footer a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: auto;
+  width: 50%;
 }
 
 #steps-to-apply {
   /* background: linear-gradient(180deg, #ff6500, rgb(154, 0, 0)); */
   background-color: #fff;
-  min-height: 70vh;
 }
 
-#steps-to-apply h2 {
-  margin-top: 4rem;
-}
 
 #apply {
+  margin:2rem;
   padding: 1rem 5rem;
   display: flex;
   justify-content: center;
@@ -448,17 +496,24 @@ footer a:hover {
   background: radial-gradient(#ff2020d0, #781703);
   color: white;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 32px;
   border-radius: 20rem;
   outline: 5px solid #fce3cd;
   aspect-ratio: 1/1;
+  margin:0;
 }
-
+.step{
+  position: relative;
+}
 .step-count {
-  font-size: 3rem;
-  padding: 1rem;
-  width: 100px;
-  height: 100px;
+  position: absolute;
+  background-color: white;
+  bottom:1rem;
+  font-size: 32px;
+  padding: 0.6rem;
+  width: 70px;
+  height: 70px;
+  color: #781703;
   border: 2px solid #781703;
   border-radius: 20rem;
 }
@@ -477,14 +532,16 @@ section#contact {
   background: linear-gradient(45deg, #a20b0b, #c83b21);
   height: 60vh;
 }
-
+#contact-form h3{
+  color:white;
+}
 #contact form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 60%;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1rem;
   border-radius: 5px;
@@ -501,7 +558,7 @@ section#contact {
 select {
   margin: 0.5rem;
   padding: 1rem;
-  width: 50%;
+  width: 60%;
   border-radius: 5px;
   border: 1px solid #0000001a;
 }
@@ -511,7 +568,7 @@ option {
 }
 
 .name-inputs {
-  width: 50%;
+  width: 60%;
   display: flex;
 }
 
@@ -524,7 +581,7 @@ option {
 .center {
   text-align: center;
   padding: 3rem;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #ca3d22;
 }
 
@@ -533,7 +590,7 @@ input[type='submit'] {
   background: linear-gradient(45deg, #ca3d22, #ff0000);
   color: white;
   border: 2px solid white;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 400;
   width: 15rem;
   margin: 1 auto;
@@ -628,7 +685,7 @@ input[type='submit']:hover {
     border-radius: 10rem;
     color: #ba1010;
     padding: 2px 4px;
-    font-size: 1.5rem;
+    font-size: 24rem;
   }
 
   /* Number text (1/3 etc) */
@@ -711,32 +768,8 @@ input[type='submit']:hover {
     padding: 1rem;
     background-color: rgb(54, 54, 255);
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     border: none;
-  }
-
-  .popup {
-    position: fixed;
-    background-color: white;
-    padding: 1rem;
-    box-shadow: 3px 3px 8px black;
-    width: 100%;
-    transition: all 0.2s ease-in-out;
-  }
-
-  .popup-hide {
-    left: -105%;
-    transition: all 0.2s ease-in-out;
-  }
-
-  #popup-close {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-  }
-
-  #close-icon {
-    margin: 1rem;
   }
 
   h2 {
@@ -760,11 +793,17 @@ input[type='submit']:hover {
   }
 
   #steps-to-apply {
-    background: linear-gradient(180deg, #ff6500, rgb(154, 0, 0));
     color: white;
     height: auto;
   }
-
+  .step{
+    position: relative;
+  }
+  .step-count{
+    position: absolute;
+    top:0;
+    background-color: white;
+  }
 
 
 
@@ -785,11 +824,6 @@ input[type='submit']:hover {
     margin: 0;
   }
 
-  /* .card {
-    margin: 1rem;
-    padding: 1rem;
-    width: 90%;
-  } */
 
   footer {
     width: 100%;
@@ -836,6 +870,7 @@ input[type='submit']:hover {
   .license-background {
     width: 95vw;
     min-height: 800px;
+    filter: brightness(0.4);
   }
 
   #services .card p {
@@ -872,6 +907,9 @@ input[type='submit']:hover {
     margin:0;
     padding: 3 0;
   }
+  #contact-form{
+    height: 80vh;
+  }
   .name-inputs{
     width: 90%;
   }
@@ -882,15 +920,19 @@ input[type='submit']:hover {
     width: 90%;
   }
 
+}
 .white-heading {
   color: white;
-  padding: 2rem auto;
-  margin-top: 0rem;
+  padding: 1rem auto;
+  margin: 2rem auto;
+  font-size: 48px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .red-heading {
   color: #ba1010;
-  padding: 2rem auto;
-  margin-top: 0rem;
-}
+  padding: 1 auto;
+  margin: 2rem auto;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
 }

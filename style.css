@@ -720,6 +720,26 @@ input[type='submit']:hover {
 
 
 @media screen and (max-width: 628px) {
+  #floating-button{
+    position: fixed;
+    background-color: white;
+    bottom:2rem;
+    border-radius:10rem;
+    z-index: 50;
+    right:1rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 4px 8px darkgrey
+  }
+  #whatsapp-logo{
+    width:96px;
+    height: 96px;
+  }
+  #whatsapp-button:hover{
+    color: white;
+  }
+  #floating-button:hover{
+    transform: scale(1.2);
+  }
   header {
     position: sticky;
     top: 0;

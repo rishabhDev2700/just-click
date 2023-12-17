@@ -179,8 +179,9 @@ nav {
   position: absolute;
   right: 10rem;
   top: 40%;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
+  font-weight:300;
   font-family: 'Red Hat Display', sans-serif;
 }
 
@@ -247,10 +248,10 @@ section {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  filter: brightness(0.5);
+  /* filter: brightness(1); */
   transition: 0.3s ease-out;
 }
-.service-background:hover{
+.services .card:hover .service-background{
   filter:brightness(0.4) blur(2px)
 }
 .card p,.card ul{
@@ -390,6 +391,7 @@ footer {
   box-shadow: 2px -2px 4px #781703;
   padding: 2rem 4rem;
   display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg,#c93c21, rgb(154, 0, 0));
   border-top: 2px solid #ca3d22;
   color: white;
@@ -414,9 +416,36 @@ footer a {
   font-size: 18px;
   padding: 1rem;
 }
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-contact{
+  text-align: start;
+}
+.footer-list{
+  margin-left:0;
+  padding:0;
+}
+.socials a{
+  margin:1rem 0;
+  padding:0;
+}
+.footer-list li a{
+  margin:0;
+  padding:0;
+}
+.address{
+  margin:1rem auto;
+}
 .footer-reserved{
-  align-self: end;
+  align-self: center;
   margin-bottom:1rem;
+  color:#ba1010;
+  padding:1rem 1.5rem;
+  border-radius: 5rem;
+  background-color: white;
+  font-family: monospace;
 }
 
 footer a:hover {
@@ -858,11 +887,17 @@ input[type='submit']:hover {
     text-align: start;
     padding:1rem;
   }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    padding:1rem 2rem;
+  }
   .footer-address{
     font-size: 16px;
     margin:2rem auto;
   }
   .footer-address h3,.footer-links h3, .footer-contact h3{
+    text-align: start;
     font-family: "Bebas Neue",sans-serif;
     font-size: 24px;
   }

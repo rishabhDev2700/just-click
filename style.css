@@ -649,6 +649,26 @@ input[type='submit']:hover {
   padding: 2rem auto;
   margin-top: 2rem;
 }
+#floating-button{
+  position: fixed;
+  background-color: white;
+  bottom:5rem;
+  border-radius:10rem;
+  z-index: 50;
+  right:6rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 4px 8px darkgrey
+}
+#whatsapp-button{
+  color:green;
+}
+#whatsapp-button:hover{
+  transform: scale(2);
+  color: white;
+}
+#floating-button:hover{
+  transform: scale(1.2);
+}
 
 /* Mobile Screen styles */
 
@@ -697,6 +717,7 @@ input[type='submit']:hover {
   }
 
 }
+
 
 @media screen and (max-width: 628px) {
   header {

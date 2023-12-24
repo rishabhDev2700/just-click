@@ -198,6 +198,7 @@ nav {
   margin: 1rem;
   transition: all 0.3s ease-in-out;
   box-shadow: 2px 2px 4px darkred;
+  z-index: 10;
 }
 
 #get-started:hover {
@@ -972,6 +973,9 @@ input[type='submit']:hover {
     height: 30rem;
     margin: 0.5rem;
     width: 100%;
+  }
+  .services .card .service-background{
+    filter:brightness(0.4) blur(2px)
   }
   #licenses{
     flex-direction: column;
